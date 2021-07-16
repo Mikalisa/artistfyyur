@@ -1,9 +1,9 @@
 
 
-from app.extensions import db, format_datetime
+from app.extensions import format_datetime
 from flask import Flask, render_template, request, Response, flash, redirect, url_for, jsonify, Blueprint
 
-from app.models import Artist, Show
+from app.models import db, Artist, Show
 from app.forms import *
 
 

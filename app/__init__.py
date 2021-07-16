@@ -3,7 +3,7 @@ from flask import Flask
 from logging import Formatter, FileHandler
 
 
-from extensions import db, format_datetime
+from app.extensions import format_datetime
 from .models import setup_db, Venue, Artist, Show
 
 from .routes.main import main
