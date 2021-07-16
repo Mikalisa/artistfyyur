@@ -1,6 +1,6 @@
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime, timedelta
-
+import os
 
 database_name = "fyyur"
 database_path = os.environ.get('DATABASE_URL')
