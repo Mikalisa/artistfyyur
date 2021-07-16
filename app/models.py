@@ -3,7 +3,8 @@ from datetime import datetime, timedelta
 
 
 database_name = "fyyur"
-database_path = "sqlite:///fyyur.db"
+database_path = os.environ.get('DATABASE_URL')
+
 
 db = SQLAlchemy()
 
